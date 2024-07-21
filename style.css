@@ -1,0 +1,92 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: content-box;
+}
+
+body {
+    background-image: url("11.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.app {
+
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.app h1 {
+    font-size: 80px;
+    color: rgb(154, 214, 178);
+    font-weight: 600;
+    border-bottom: 1px hwb(256 5% 35%) #333;
+    padding-bottom: 30px;
+    padding-left: 50px;
+}
+
+.quiz {
+    padding: 20px 0;
+}
+
+.quiz h2 {
+    font-size: 22px;
+    color: rgb(176, 206, 209);
+    font-weight: 600;
+    padding-left: 50px;
+    padding-block: 40px;
+    padding-bottom: 40px;
+}
+
+.btn {
+    background-blend-mode: rgb(221, 164, 211);
+    color: #5da874;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.btn:hover:not([disabled]) {
+    background-color: rgb(78, 70, 59);
+    color: #fff;
+
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+#next-btn {
+    background-color: azure;
+    color: #222;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 6px;
+    cursor: pointer;
+    display: none;
+}
+
+.correct {
+    background-color: rgb(107, 204, 171);
+}
+
+.incorrect {
+    background-color: crimson;
+}
